@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iKnow - He Knows What's Next</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <h1><span>iKnow</span> - He Knows What's Next.</h1>
+    <h4>Created By Muhammad<span> Hanan </span>Asghar.(AI)</h4>
+    <form action="/predict" method="post">
+        <div>
+            <input placeholder="Enter No of Words You Want" type="text" name="no" id='no_input' required>
+            <input placeholder="Enter Word" type="text" name="word" id='word_input' required>
+        </div>
+        <input type="submit" value="What's Next!" id="input_submit">
+    </form>
+    <section id="para">
+        {{value}}
+    </section>
+</body>
+</html>
